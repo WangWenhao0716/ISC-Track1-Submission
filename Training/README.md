@@ -33,6 +33,8 @@ The process to generate other 8 datasets (except for ```isc_100k_256_big_ff``` a
 For ```isc_100k_256_big_ff```, we select some images which contain human faces from the given training dataset and perform the same augmentation as ```isc_100k_256_big```. Finally, the augmented face images are added into the ```isc_100k_256_big``` dataset to form ```isc_100k_256_big_ff```. And ```isc_100k_256_big_ff_bw``` is the black and white version of ```isc_100k_256_big_ff```.
 
 
+## Training
+
 
 
 
