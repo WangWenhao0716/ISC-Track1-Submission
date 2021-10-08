@@ -1,6 +1,6 @@
 # The steps for reproducing training
 
-## Generate datasets.
+## Generate datasets
 
 In the training parts, we use 11 datasets with different augmentations. The datasets are all selected from the provided training data. We choose 100,000 out of 1000,0000 images to perform training. It should be noted that NO reference data is used.
 
@@ -28,5 +28,14 @@ Assuming all the datasets are stored in ```/dev/shm```. An example to generate a
 ```
 cd generate && python isc_100k_256_big.py
 ```
-The process to generate other 10 datasets is similiar with this command line.
+The process to generate other 8 datasets (except for ```isc_100k_256_big_ff``` and ```isc_100k_256_big_ff_bw```) is similiar with this command line.
+
+For ```isc_100k_256_big_ff```, we select some images which contain human faces from the given training dataset and perform the same augmentation as ```isc_100k_256_big```. Finally, the augmented face images are added into the ```isc_100k_256_big``` dataset to form ```isc_100k_256_big_ff```. And ```isc_100k_256_big_ff_bw``` is the black and white version of ```isc_100k_256_big_ff```.
+
+
+
+
+
+
+
 
