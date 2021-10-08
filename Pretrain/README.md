@@ -7,7 +7,7 @@ As declared before, you can directly download the pre-trained models from the [*
 
 ## ResNet-152 and ResNet-50-IBN
 
-We modifiy the official codes of [**Momentum2-teacher**](https://github.com/zengarden/momentum2-teacher) by changing the backbones to ResNet-152 and ResNet-50-IBN. The folder momentum2-teacher-resnet152 and momentum2-teacher-resnetIBN give the details.
+We modifiy the official codes of [**Momentum2-teacher**](https://github.com/zengarden/momentum2-teacher) by changing the backbones to ResNet-152 and ResNet-50-IBN. The folders momentum2-teacher-resnet152 and momentum2-teacher-resnetIBN give the details.
 
 It is assumed that the ImageNet dataset is saved in the shared memory, and the data structure is:
 ```
