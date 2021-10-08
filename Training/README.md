@@ -22,7 +22,7 @@ To be convenient, we supply the link to generated 11 datasets as follows.
 You can directly download them from Google drive and unzip them. The default path is ```/dev/shm``` to store the images temporarily for training.
 
 
-Or you can generate the training datasets according to the codes in the ```generate``` folder. It takes about about one day to generate one dataset using one core of Intel Golden 6240 CPU. To speed up, using multi-cores is a feasible way. We use some images from [**OpenImage**](https://opensource.google/projects/open-images-dataset) to generate overlay and underlay augmentation under CC-by 4.0 License. It should be noted that the using of OpenImage is not a must, other images show similar performance. The part of OpenImage we used can be downloaded from [**here**](). 
+Or you can generate the training datasets according to the codes in the ```generate``` folder by yourself. It takes about about one day to generate one dataset using one core of Intel Golden 6240 CPU. To speed up, using multi-cores is a feasible way. We use some images from [**OpenImage**](https://opensource.google/projects/open-images-dataset) to generate overlay and underlay augmentation under CC-by 4.0 License. It should be noted that the using of OpenImage is not a must, other images show similar performance. The part of OpenImage we used can be downloaded from [**here**](). 
 
 Assuming all the datasets are stored in ```/dev/shm```. An example to generate a dataset is:
 ```
