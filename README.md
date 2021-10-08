@@ -28,7 +28,7 @@ It should be noted that the pre-training processing plays a very important role 
 
 
 ## Training
-For training, we generate 11 datasets
+For training, we generate 11 datasets. For each dataset, 3 models with different backbones are trained. Each training takes about 1 day on 4 V100 gpus (bigger backbone takes longer and smaller backbone takes shorter). The whole training codes including how to generate training datasets and the link to the generated datasets are given in Training folder. For more details, please refer to the readme file in that folder.
 
 
 ## Test
