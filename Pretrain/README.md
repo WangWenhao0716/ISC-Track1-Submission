@@ -31,6 +31,12 @@ python train.py -b 512 -d 0-7 \
 on a standard 8 V100 GPUs machine.
 You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet152```.
 
+After getting the pretrained model, run:
+```
+python tran.py
+```
+to transfer the unsupervised pretrained model to the one we can use. It is saved in ```/dev/shm``` by default.
+
 
 ### ResNet-50-IBN
 Please enter the folder by ```cd momentum2-teacher-resnetIBN```, and running:
@@ -42,8 +48,17 @@ python train.py -b 1024 -d 0-7 \
 on a standard 8 V100 GPUs machine.
 You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet50ibn```.
 
+After getting the pretrained model, run:
+```
+python tran.py
+```
+to transfer the unsupervised pretrained model to the one we can use. It is saved in ```/dev/shm``` by default.
+
 
 Note: The above pre-training codes support training from a checkpoint.
+
+
+
 
 
 
