@@ -15,6 +15,8 @@ To begin with, you should install the following packages with specified version 
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
 
+Note: Some unimportant packages may be missing, please install it using pip directly when an error occurs.
+
 ## Pre-trained models
 We use three pre-trained models. They are all pre-trained on ImageNet unsupervisedly. To be convenient, we first directly give the pretrained models as follows, then also the training codes are given.
 
