@@ -1,4 +1,4 @@
-# The step to get the pre-trained models
+# The steps to get the pre-trained models
 
 ## ResNet-50
 
@@ -21,6 +21,17 @@ It is assumed that the ImageNet dataset is saved in the shared memory, and the d
              *n02701002
 ```
 
+### ResNet-152
+Please enter the folder by ```cd momentum2-teacher-resnet152```, and running:
+```
+python train.py -b 512 -d 0-7 \
+--experiment-name imagenet_baseline_resnet152 \
+-f momentum_teacher/exps/arxiv/exp_8_v100/momentum2_teacher_300e_exp.py \
+```
+on a standard 8 V100 GPUs machine.
+You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet152```.
+
+
 ### ResNet-50-IBN
 Please enter the folder by ```cd momentum2-teacher-resnetIBN```, and running:
 ```
@@ -30,6 +41,9 @@ python train.py -b 1024 -d 0-7 \
 ```
 on a standard 8 V100 GPUs machine.
 You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet50ibn```.
+
+
+Note: The above pre-training codes support training from a checkpoint.
 
 
 
