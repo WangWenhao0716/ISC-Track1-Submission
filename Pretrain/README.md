@@ -16,9 +16,11 @@ It is assumed that the ImageNet dataset is saved in the shared memory, and the d
          *train
              *n02443484
              *n02701002
+             ...
          *val
              *n02443484
              *n02701002
+             ...
 ```
 
 ### ResNet-152
