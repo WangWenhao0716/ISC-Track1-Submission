@@ -21,11 +21,17 @@ There is a one-to-one relation between the name of training datasets and the nam
 
 These 11 folders are also given in the test part. You should download the trained models by yourselves and store them into the according folders seperately.
 
-
-
-
-
 ## Generate datasets
+We augment query and reference datasets to match locally. The codes for augmentation are given in ```augmentation``` folder.
+
+### Query
+For query, we design 3 augmentations, i.e. center cropping, selective searching, and detection.
+
+Center cropping: We use center cropping to generate 5 images, the schematic are as follows.
+
+### Reference
+
+
 
 ## Test
 
