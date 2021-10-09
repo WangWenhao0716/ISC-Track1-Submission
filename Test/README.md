@@ -25,13 +25,17 @@ These 11 folders are also given in the test part. You should download the traine
 We augment query and reference datasets to match locally. The codes for augmentation are given in ```augmentation``` folder.
 
 ### Query
-For query, we design 3 augmentations, i.e. center cropping, selective searching, and detection.
+For query, we design 3 augmentations, i.e. center cropping, selective search, and detection.
 
 Center cropping: We use center cropping to generate 5 images, the schematic are as follows.
 
 ![The first center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_1.pdf)
 
 ![The second center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_2.pdf)
+
+Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended (Sorry for not developing automatically programes). 
+
+Detection: We use Yolo-V5 to detect overlay images. The related training and test codes and readme are given in Yolo-V5 Folder.
 
 ### Reference
 
