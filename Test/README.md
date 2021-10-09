@@ -22,7 +22,7 @@ There is a one-to-one relation between the name of training datasets and the nam
 These 11 folders are also given in the test part. You should download the trained models by yourselves and store them into the according folders seperately.
 
 ## Generate datasets
-We augment query and reference datasets to match locally. The codes for augmentation are given in ```augmentation``` folder.
+We augment query and reference datasets to match locally. The codes for augmentation are given in ```augmentation``` folder. By the way, to run theses augmentations, it is assumed that all the original query images and generated images are saved in ```/dev/shm```.
 
 ### Query
 For query, we design three augmentations, i.e. center cropping, selective search, and detection.
@@ -33,7 +33,7 @@ Center cropping: We use center cropping to generate 5 images, and the illustrati
 
 ![The second center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_2.pdf)
 
-Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended (Sorry for not developing automatically programes). 
+Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended (Sorry for not developing automatically programmes). 
 
 Detection: We use Yolo-V5 to detect overlay images. The related training and test codes and readme are given in Yolo-V5 Folder.
 
