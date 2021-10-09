@@ -55,7 +55,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balanc
 --logs-dir logs/baseline_CC/50 \
 --height 256 --width 256
 ```
-The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar``` will be used to test. Please do NOT change any hyper-parameters in any scripts. Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. 
+The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar```, will be used to test. Please do NOT change any hyper-parameters in any scripts. Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. 
 
 I promise all the training experiments have been reproduced by ourselves and the results are stable. If you find any problems with the reproduction of training, please feel free to contact me.
 
