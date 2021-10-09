@@ -35,6 +35,31 @@ For ```isc_100k_256_big_ff```, we select some images which contain human faces f
 
 ## Training
 
+Remember that we have three pre-trained models, i.e. ```resnet50_bar.pth```, ```unsupervised_pretrained_byol_152.pkl```, and ```unsupervised_pretrained_m2t_ibn.pkl```, stored in ```/dev/shm```. For one dataset, we train 3 models according to the three pre-trained models. Therefore, totally, 3x11=33 models are trained. To be convenient, we give all the 33 training scripts in ```scirpt``` folder. When using one script, you should move it by ```mv xxx.sh ../```. 
+
+Take the first script, ```Train_baseline_CC_50.sh```, for instance. You should
+```
+mv Train_baseline_CC_50.sh ../
+```
+```
+bash Train_baseline_CC_50.sh
+```
+
+Take a look to the ```Train_baseline_CC_50.sh```:
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balance.py \
+-ds isc_100k_256_big -a resnet50 --margin 0.0 \
+--num-instances 4 -b 128 -j 8 --warmup-step 5 \
+--lr 0.00035 --iters 8000 --epochs 25 \
+--data-dir /dev/shm/ \
+--logs-dir logs/baseline_CC/50 \
+--height 256 --width 256
+```
+The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar``` will be used to test. Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers.
+
+### One more thing
+Due to the large number of classes, we split the fully-connected layers into 4 GPUs, therefore, if the number of images cannot be divided by 4, an error will occur. This error may happen for ```isc_100k_256_big_ff_bw``` and ```isc_100k_256_big_ff``` datasets, and to eliminate the error, you can go to the folder by ``` cd /dev/shm/isc_100k_256_big_ff_bw/isc_100k_256_big_ff_bw``` and delete some images, such as ```rm -rf 0_*```. You should NOT delete more than 3 IDs.
+
 
 
 
