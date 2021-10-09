@@ -19,6 +19,7 @@ There is a one-to-one relation between the name of training datasets and the nam
 | isc_100k_256_big_opa | V5_opa_CC  |
 | isc_100k_256_big_u | V5_u_CC  |
 
+These 11 folders are also given in the test part. You should download the trained models by yourselves and store them into the according folders seperately.
 
 
 
