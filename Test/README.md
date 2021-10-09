@@ -29,6 +29,10 @@ For query, we design 3 augmentations, i.e. center cropping, selective searching,
 
 Center cropping: We use center cropping to generate 5 images, the schematic are as follows.
 
+![The first center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_1.pdf)
+
+![The second center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_2.pdf)
+
 ### Reference
 
 
