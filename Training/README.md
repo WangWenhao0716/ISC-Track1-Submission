@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balanc
 The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar```, will be used to test. Please do NOT change any hyper-parameters in any scripts. We support resume training from a checkpoint, and the process can be finished automatically by adding ```--auto_resume```.
 
 
-Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. You should change the path to ```checkpoint_24.pth.tar``` and the path to save for yourself, the following is an example:
+Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. You should change the path to ```checkpoint_24.pth.tar``` and the path to save by yourself, the following is an example:
 
 ```
 import torch
