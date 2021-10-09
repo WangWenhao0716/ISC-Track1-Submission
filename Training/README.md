@@ -55,7 +55,20 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balanc
 --logs-dir logs/baseline_CC/50 \
 --height 256 --width 256
 ```
-The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar```, will be used to test. Please do NOT change any hyper-parameters in any scripts. Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. 
+The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar```, will be used to test. Please do NOT change any hyper-parameters in any scripts. We support resume training from a checkpoint, and the process can be finished automatically by adding ```--auto_resume```.
+
+
+Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. You should change the path to ```checkpoint_24.pth.tar``` and the path to save for yourself, the following is an example:
+
+```
+import torch
+mod = torch.load('logs/baseline_CC/50/checkpoint_24.pth.tar',map_location='cpu')
+mod['state_dict'].pop('classifier_0.weight')
+mod['state_dict'].pop('classifier_1.weight')
+mod['state_dict'].pop('classifier_2.weight')
+mod['state_dict'].pop('classifier_3.weight')
+torch.save(mod['state_dict'], '/dev/shm/baseline_cc_50.pth.tar')
+```
 
 I promise all the training experiments have been reproduced by ourselves and the results are stable. If you find any problems with the reproduction of training, please feel free to contact me.
 
