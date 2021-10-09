@@ -57,6 +57,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balanc
 ```
 The ```/dev/shm``` is the dir to store images, for ```isc_100k_256_big``` dataset, please check the number of images is 2,000,000. The checkpoints will be saved into ```logs/baseline_CC/50```. And the final checkpoint, i.e. ```checkpoint_24.pth.tar``` will be used to test. Please do NOT change any hyper-parameters in any scripts. Also, to be efficient, you should use the ```Tran.py``` to discard all the fully-connected layers. 
 
+I promise all the training experiments have been reproduced by ourselves and the results are stable. If you find any problems with the reproduction of training, please feel free to contact me.
+
 ### One more thing
 Due to the large number of classes, we split the fully-connected layers into 4 GPUs, therefore, if the number of images cannot be divided by 4, an error will occur. This error may happen for ```isc_100k_256_big_ff_bw``` and ```isc_100k_256_big_ff``` datasets, and to eliminate the error, you can go to the folder by ``` cd /dev/shm/isc_100k_256_big_ff_bw/isc_100k_256_big_ff_bw``` and delete some images, such as ```rm -rf 0_*```. You should NOT delete more than 3 IDs.
 
