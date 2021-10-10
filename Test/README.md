@@ -135,6 +135,8 @@ V5_baseline_CC/ibn/predictions_dev_queries_50k_normalized_exp_VD.csv
 
 For all other 10 folders, please perform the same action to get the final ```csv``` files, and all the ```.sh``` files for each folder have been prepared for you.
 
+In conclusion, we will get 33 different ```predictions_dev_queries_50k_normalized_exp_VD.csv``` files in this step.
+
 ### OQ + AR
 
 
