@@ -31,13 +31,25 @@ Please Remember the original image!
 
 Rotating: We rotate an image 90, 180, and 270 degrees to generate three images.
 
+```
+python rotate.py
+```
+
 Center cropping: We use center cropping to generate 5 images, and the illustrations are as follows.
 
 ![The first center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_1.pdf)
 
 ![The second center cropping](https://github.com/WangWenhao0716/ISC-Track1-Submission/blob/main/Test/aug_2.pdf)
 
+```
+python center.py
+```
+
 Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended (Sorry for not developing automatically programmes). 
+
+```
+python selective_search_nms.py
+```
 
 Detection: We use Yolo-V5 to detect overlay images. The related training and test codes and readme are given in Yolo-V5 Folder.
 
@@ -63,6 +75,9 @@ For reference, we only design one augmentation, i.e. dividing. The illustrations
 
 Note that, though we only have one augmentation, each image can generate 1 + (4 + 1) + (9 + 4) = 19 images, and total 19x1,000,000 = 19,000,000 images are generated . Therefore, please prepare enough storage to store the generated images and corresponding features. Please do NOT store low quality images, which may reduce the performance.
 
+```
+python dividing.py
+```
 
 ## Test
 
