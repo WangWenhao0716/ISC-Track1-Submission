@@ -133,6 +133,8 @@ V5_baseline_CC/50/predictions_dev_queries_50k_normalized_exp_VD.csv
 V5_baseline_CC/ibn/predictions_dev_queries_50k_normalized_exp_VD.csv
 ```
 
+For all other 10 folders, please perform the same action to get the final ```csv``` files, and all the ```.sh``` files for each folder have been prepared for you.
+
 ### OQ + AR
 
 
