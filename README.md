@@ -2,7 +2,7 @@
 The codes and related files to reproduce the results for Image Similarity Challenge Track 1.
 
 ## Required dependencies
-To begin with, you should install the following packages with specified version in Python. Other versions may work but please do NOT try. For instance, cuda 11.0 has some bugs which bring very bad results. The hardware chosen is Nvidia Tesla V100. Other hardwares, such as A100, may work but please do NOT try. The stability is not garanteed, for instance, the Ampere architecture is not suitable and some instability is observed.
+To begin with, you should install the following packages with specified version in Python, Anaconda. Other versions may work but please do NOT try. For instance, cuda 11.0 has some bugs which bring very bad results. The hardware chosen is Nvidia Tesla V100. Other hardwares, such as A100, may work but please do NOT try. The stability is not garanteed, for instance, the Ampere architecture is not suitable and some instability is observed.
 
 * python 3.7.10
 * pytorch 1.7.1 with cuda 10.1
