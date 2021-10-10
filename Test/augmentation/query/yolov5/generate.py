@@ -24,7 +24,7 @@ for i in range(len(names)):
                     old_img = old_img.resize((new_w,new_h))
                     new_img = old_img.crop(detect[j][:-2])
                     num = 100 + j
-                    dst = '/tmp/query_images_exp/' + names[i] + '_' + str(num) + '.jpg'
+                    dst = '/dev/shm/query_images_exp/' + names[i] + '_' + str(num) + '.jpg'
                     print(i)
                     al.append(i)
                     new_img.save(dst,quality=100)
