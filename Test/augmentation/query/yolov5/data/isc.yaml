@@ -1,0 +1,9 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: ./datasets/isc_v3/images/train/
+val: ./datasets/isc_v3/images/val/
+
+# number of classes
+nc: 2
+
+# class names
+names: ['Overlay', 'Emoji']
