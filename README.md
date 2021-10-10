@@ -10,6 +10,7 @@ To begin with, you should install the following packages with specified version 
 * h5py 3.4.0
 * pandas 1.3.3
 * sklearn 1.0
+* skimage 0.18.3
 * PIL 8.3.2
 * numpy 1.16.0
 * torchvision 0.8.2 with cuda 10.1
