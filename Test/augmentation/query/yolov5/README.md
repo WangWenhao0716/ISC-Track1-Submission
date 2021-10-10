@@ -26,5 +26,4 @@ Train Yolo-V5 by:
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py --img-size 640 --batch-size 16 \
 --epochs 50 --data ./data/isc.yaml --cfg ./models/yolov5x.yaml --weights weights/yolov5x.pt
-
 ```
