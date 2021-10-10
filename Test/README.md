@@ -51,7 +51,9 @@ Selective search: We perform selective search and NMS to find the interested par
 python selective_search_nms.py
 ```
 
-Detection: We use Yolo-V5 to detect overlay images. The related training and test codes and readme are given in Yolo-V5 Folder.
+Detection: We use Yolo-V5 to detect overlay images. The related training and test codes and readme are given in ```augmentation/query/yolov5``` Folder.
+
+
 
 For example, if the name of the original image is ```Q00000.jpg```, then we will have the following names after the augmentations: 
 
