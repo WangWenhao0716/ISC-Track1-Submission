@@ -12,10 +12,13 @@ To begin with, you should install the following packages with specified version 
 * sklearn 1.0
 * skimage 0.18.3
 * PIL 8.3.2
+* cv2 4.5.3
 * numpy 1.16.0
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
 * selectivesearch 0.4
+* tqdm 4.62.3
+* pyyaml 5.4.1
 
 Note: Some unimportant packages may be missing, please install it using pip directly when an error occurs.
 
