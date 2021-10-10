@@ -15,6 +15,7 @@ To begin with, you should install the following packages with specified version 
 * numpy 1.16.0
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
+* selectivesearch 0.4
 
 Note: Some unimportant packages may be missing, please install it using pip directly when an error occurs.
 
