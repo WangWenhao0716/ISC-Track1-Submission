@@ -124,7 +124,7 @@ bash score_normalization_152.sh
 bash score_normalization_50.sh
 bash score_normalization_ibn.sh
 ```
-Note that the number of augmented query images is unknown now, we estimate this number, and assume the features of augmented query images are stored in ```query_{0..28}_byol_VD_50k.hdf5```. However, the number of 28 may be bigger or smaller.
+***Note that the number of augmented query images is unknown now, we estimate this number, and assume all the features of augmented query images are stored in ```query_{0..28}_byol_VD_50k.hdf5```. However, the number of 28 may be bigger or smaller.***
 
 Finally, we will get 
 ```
