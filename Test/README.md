@@ -99,7 +99,7 @@ All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256
 
 We can enter into the folder by ```cd final/V5_baseline_CC```. You should move the generated ```dev_queries_exp_VD``` to ```final/V5_baseline_CC/list_files/```
 
-It is assumed that training images are saved in ```/dev/shm/training_images```, original reference images are saved in ```/dev/shm/reference_images```, augmented query images are saved in ```/dev/shm/query_images_exp_VD```
+It is assumed that training images are saved in ```/dev/shm/training_images```, original reference images are saved in ```/dev/shm/reference_images```, augmented query images are saved in ```/dev/shm/query_images_exp_VD```.
 
 You can gain PCA files and the features of reference images by:
 ```
