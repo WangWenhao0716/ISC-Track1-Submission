@@ -209,9 +209,12 @@ Finally, running ```python combine.py```, you will get ```step_11_50k.csv``` in 
 
 ### How to perform multi-scale ensemble.
 The image size used in the ```final``` is 256. We should repeat all the above pipelines using image size of 200 and 320 in ```final_200``` and ```final_320``` folders, respectively. To be efficient, OQ+AR should NOT be repeated, you can copy the ```R-baseline-CC-234-50k.csv``` from ```final/V5_baseline_CC_ref``` to ```final_200/V5_baseline_CC_ref``` and ```final_300/V5_baseline_CC_ref``` directly.
+
 ### How to get the final submission.
+Until now, we have ```final/step_11_50k.csv```, ```final_200/step_11_50k.csv```, and ```final_320/step_11_50k.csv```. 
+By running ```python submit.py```, you can get the file to submit.
 
-
+Congratulations!
 
 
 
