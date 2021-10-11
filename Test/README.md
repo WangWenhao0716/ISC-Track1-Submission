@@ -92,7 +92,7 @@ python generate_file_list_r.py
 ```
 
 ## Test
-Until now, we have 3x11 = 33 trained models, augmented query images, and augmented reference images. The test processing can be divided into two parts: Using augmented query images with original reference images (AQ+OR), and using original query images with augmented reference image (OQ+AR). For AQ+OR, we use three models, and for OQ+AR, we only use three models. All of the related files are stored in ```final``` folder.
+Until now, we have 3x11 = 33 trained models, augmented query images, and augmented reference images. The test processing can be divided into two parts: Using augmented query images with original reference images (AQ+OR), and using original query images with augmented reference image (OQ+AR). For AQ+OR, we use all the 33 models, and for OQ+AR, we only use three models. All of the related files are stored in ```final``` folder.
 
 ### AQ + OR
 All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar. Other 10 folders follow the similar pipelines.
