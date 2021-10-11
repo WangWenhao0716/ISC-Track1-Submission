@@ -95,19 +95,19 @@ python generate_file_list_r.py
 Until now, we have 3x11 = 33 trained models, augmented query images, and augmented reference images. The test processing can be divided into two parts: Using augmented query images with original reference images (AQ+OR), and using original query images with augmented reference image (OQ+AR). For AQ+OR, we use all the 33 models, and for OQ+AR, we only use three models. All of the related files are stored in ```final``` folder.
 
 ### AQ + OR
-All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar. Other 10 folders follow the similar pipelines.
+All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar. Other 10 folders follow the same pipelines.
 
 We can enter into the folder by ```cd final/V5_baseline_CC```. You should move the generated ```dev_queries_exp_VD``` to ```final/V5_baseline_CC/list_files/```
 
 It is assumed that training images are saved in ```/dev/shm/training_images```, original reference images are saved in ```/dev/shm/reference_images```, augmented query images are saved in ```/dev/shm/query_images_exp_VD```
 
-You should gain PCA file and features of reference images by:
+You can gain PCA files and the features of reference images by:
 ```
 bash extract_reference_152.sh
 bash extract_reference_50.sh
 bash extract_reference_ibn.sh
 ```
-There is no specified squence for running the three scripts. However, you should accomplished the three files before running the followings.
+There is no specified sequence for running the above three scripts. However, you should accomplished the three files before running the followings.
 Then, extract features of training and augmented query images by:
 ```
 bash extract_training_152.sh
@@ -139,7 +139,41 @@ In conclusion, we will get 33 different ```predictions_dev_queries_50k_normalize
 
 ### OQ + AR
 
+We only use three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar, to perform testing here.
 
+We can enter into the folder by ```cd final/V5_baseline_CC_ref```. You should move the generated ```dev_reference_exp``` to ```final/V5_baseline_CC_ref/list_files/```.
+
+It is assumed that training images are saved in ```/dev/shm/training_images```, augmented reference images are saved in ```/dev/shm/reference_images```, original query images are saved in ```/dev/shm/query_images```.
+
+You should gain PCA file and features of reference images by:
+```
+bash extract_reference_exp_152.sh
+bash extract_reference_exp_50.sh
+bash extract_reference_exp_ibn.sh
+```
+There is no specified squence for running the three scripts. However, you should accomplished the three files before running the followings. Then, extract features of training and original query images by:
+```
+bash extract_training_152.sh
+bash extract_training_50.sh
+bash extract_training_ibn.sh
+bash extract_query_152.sh
+bash extract_query_50.sh
+bash extract_query_ibn.sh
+```
+After all the features are extracted, you should run
+```
+bash score_normalization_152.sh
+bash score_normalization_50.sh
+bash score_normalization_ibn.sh
+```
+Finally, we will get
+```
+V5_baseline_CC_ref/152/predictions_dev_queries_50k_normalized_exp.csv
+V5_baseline_CC_ref/50/predictions_dev_queries_50k_normalized_exp.csv
+V5_baseline_CC_ref/ibn/predictions_dev_queries_50k_normalized_exp.csv
+
+```
+In conclusion, we will get 3 different predictions_dev_queries_50k_normalized_exp.csv files in this step.
 
 
 
