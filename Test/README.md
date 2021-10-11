@@ -179,13 +179,36 @@ In conclusion, we will get 3 different predictions_dev_queries_50k_normalized_ex
 ***Note that though ensemble methods are performed to all images together, it can be also apply to the circumstance that when there are only a query and a reference image by adjusting the threshold.***
 
 ### How to gather the 3 results getting from 152, 50, ibn models (AQ + OR).
+We still take ```V5_baseline_CC``` for example, and other 10 folders follow similar pipelines.
+
+First enter the folder, by ```cd final/V5_baseline_CC```, then run ```python aggregate.py```. You will get ```V5-baseline-CC-234-50k-VD.csv``` file in the ```V5_baseline_CC``` folder.
 
 ### How to gather the 3 results getting from 152, 50, ibn models (OQ + AR).
 
+First enter the folder, by ```cd final/V5_baseline_CC_ref```, then run ```python aggregate.py```. You will get ```R-baseline-CC-234-50k.csv``` file in the ```V5_baseline_CC_ref``` folder.
+
 ### How to gather the 12 results from 12 folders (AQ+OR & OQ+AR).
 
-### How to perform multi-scale ensemble.
+Before gathering, we should generate 4 files:
 
+1~3: The augmented query images that smaller than 100, 150, 200:
+```
+python generate_100.py
+python generate_150.py
+python generate_200.py
+```
+You will get ```query_wrong_100_VD.npy```, ```query_wrong_150_VD.npy```, and ```query_wrong_100_VD.npy``` in ```final``` folder. 
+
+4: The augmented reference images that generated from face images.
+```
+python detect_face.py
+```
+You will get ```face_del.npy``` in ```final``` folder. 
+
+Finally, running ```python combine.py```, you will get ```step_11_50k.csv``` in ```final``` folder.
+
+### How to perform multi-scale ensemble.
+The image size used in the ```final``` is 256. We should repeat all the above pipelines using image size of 200 and 320 in ```final_200``` and ```final_320``` folders, respectively. To be efficient, OQ+AR should NOT be repeated, you can copy the ```R-baseline-CC-234-50k.csv``` from ```final/V5_baseline_CC_ref``` to ```final_200/V5_baseline_CC_ref``` and ```final_300/V5_baseline_CC_ref``` directly.
 ### How to get the final submission.
 
 
