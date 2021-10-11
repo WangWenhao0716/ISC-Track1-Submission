@@ -174,6 +174,21 @@ V5_baseline_CC_ref/ibn/predictions_dev_queries_50k_normalized_exp.csv
 ```
 In conclusion, we will get 3 different predictions_dev_queries_50k_normalized_exp.csv files in this step.
 
-
-
 ## Ensemble methods
+
+### How to gather the 3 results getting from 152, 50, ibn models (AQ + OR).
+
+### How to gather the 3 results getting from 152, 50, ibn models (OQ + AR).
+
+### How to gather the 12 results from 12 folders (AQ+OR & OQ+AR).
+
+### How to perform multi-scale ensemble.
+
+### How to get the final submission.
+
+
+
+
+
+
+
