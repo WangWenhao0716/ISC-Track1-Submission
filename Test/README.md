@@ -176,6 +176,8 @@ In conclusion, we will get 3 different predictions_dev_queries_50k_normalized_ex
 
 ## Ensemble methods
 
+***Note that though ensemble methods are performed to all images together, it can be also apply to the circumstance that when there are only a query and a reference image by adjusting the threshold.***
+
 ### How to gather the 3 results getting from 152, 50, ibn models (AQ + OR).
 
 ### How to gather the 3 results getting from 152, 50, ibn models (OQ + AR).
