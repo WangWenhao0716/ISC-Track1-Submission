@@ -97,7 +97,7 @@ Until now, we have 3x11 = 33 trained models, augmented query images, and augment
 ### AQ + OR
 All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar. Other 10 folders follow the similar pipelines.
 
-We can enter into the folder by ```cd final/V5_baseline_CC```. 
+We can enter into the folder by ```cd final/V5_baseline_CC```. You should move the generated ```dev_queries_exp_VD``` to ```final/V5_baseline_CC/list_files/```
 
 It is assumed that training images are saved in ```/dev/shm/training_images```, original reference images are saved in ```/dev/shm/reference_images```, augmented query images are saved in ```/dev/shm/query_images_exp_VD```
 
