@@ -171,7 +171,6 @@ Finally, we will get
 V5_baseline_CC_ref/152/predictions_dev_queries_50k_normalized_exp.csv
 V5_baseline_CC_ref/50/predictions_dev_queries_50k_normalized_exp.csv
 V5_baseline_CC_ref/ibn/predictions_dev_queries_50k_normalized_exp.csv
-
 ```
 In conclusion, we will get 3 different predictions_dev_queries_50k_normalized_exp.csv files in this step.
 
