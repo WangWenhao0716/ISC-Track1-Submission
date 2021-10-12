@@ -210,7 +210,7 @@ The image size used in the ```final``` is 256. We should repeat all the above pi
 
 ### How to get the final submission.
 Until now, we have ```final/step_11_50k.csv```, ```final_200/step_11_50k.csv```, and ```final_320/step_11_50k.csv```. 
-By running ```python submit.py```, you can get the file, ```submit_50k.csv```, to submit.
+By running ```bash submit.sh```, you can get the file, ```submit_50k.csv```, to submit.
 
 Congratulations!
 
