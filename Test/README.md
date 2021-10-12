@@ -143,7 +143,7 @@ We only use three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.p
 
 We can enter into the folder by ```cd final/V5_baseline_CC_ref```. You should move the generated ```dev_reference_exp``` to ```final/V5_baseline_CC_ref/list_files/```.
 
-It is assumed that training images are saved in ```/dev/shm/training_images```, augmented reference images are saved in ```/dev/shm/reference_images```, original query images are saved in ```/dev/shm/query_images```.
+It is assumed that training images are saved in ```/dev/shm/training_images```, augmented reference images are saved in ```/dev/shm/reference_images_exp```, original query images are saved in ```/dev/shm/query_images```.
 
 You should gain PCA file and features of reference images by:
 ```
