@@ -193,9 +193,7 @@ Before gathering, we should generate 4 files:
 
 1~3: The augmented query images that smaller than 100, 150, 200:
 ```
-python generate_100.py
-python generate_150.py
-python generate_200.py
+python generate_100_150_200.py
 ```
 You will get ```query_wrong_100_VD.npy```, ```query_wrong_150_VD.npy```, and ```query_wrong_100_VD.npy``` in ```final``` folder. 
 
