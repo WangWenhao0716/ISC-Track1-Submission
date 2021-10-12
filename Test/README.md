@@ -203,7 +203,7 @@ python detect_face.py
 ```
 You will get ```face_del.npy``` in ```final``` folder (*In fact, we have prepared the file for you, there is no need to generate it again.*). 
 
-Finally, running ```python combine.py```, you will get ```step_11_50k.csv``` in ```final``` folder.
+Finally, by running ```python combine.py```, you will get ```step_11_50k.csv``` in ```final``` folder.
 
 ### How to perform multi-scale ensemble.
 The image size used in the ```final``` is 256. We should repeat all the above pipelines using image size of 200 and 320 in ```final_200``` and ```final_320``` folders, respectively. To be efficient, OQ+AR should NOT be repeated, you can copy the ```R-baseline-CC-234-50k.csv``` from ```final/V5_baseline_CC_ref``` to ```final_200/V5_baseline_CC_ref``` and ```final_300/V5_baseline_CC_ref``` directly.
