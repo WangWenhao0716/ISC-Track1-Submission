@@ -8,6 +8,7 @@ from PIL import Image
 import skimage.data
 import selectivesearch
 import numpy as np
+import argparse
 
 def NMS(arr, thresh):
     x1 = arr[:, 0]
@@ -36,11 +37,17 @@ def NMS(arr, thresh):
 
 path = '/dev/shm/query_images/'
 names = sorted(os.listdir(path))
-# To perform multi-core running manually, you should change the num, begin, end to seperate images into multi-parts, for example: use one core to deal with 2500 images .
 
-#num = 19
-begin = 0 #num * 2500
-end = 50000 #(num+1) * 2500
+parser = argparse.ArgumentParser()
+def aa(*args, **kwargs):
+    group.add_argument(*args, **kwargs)
+group = parser.add_argument_group('The range of images')
+aa('--num', default=0, type=int, help="The begin number ")
+args = parser.parse_args()
+
+num = args.num
+begin = num * 500
+end = (num+1) * 500
 for i in range(begin,end):
     print("processing ... %d"%i)
     test = Image.open(path + names[i])
