@@ -201,7 +201,7 @@ You will get ```query_wrong_100_VD.npy```, ```query_wrong_150_VD.npy```, and ```
 ```
 python detect_face.py
 ```
-You will get ```face_del.npy``` in ```final``` folder (*In fact, we have prepared the file for you, there is no need to generate it again.*). 
+You will get ```face_del.npy``` in ```final``` folder (*In fact, we have prepared the file for you, and there is no need to generate it again.*). 
 
 Finally, by running ```python combine.py```, you will get ```step_11_50k.csv``` in ```final``` folder.
 
