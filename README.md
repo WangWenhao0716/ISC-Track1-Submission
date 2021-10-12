@@ -17,6 +17,7 @@ To begin with, you should install the following packages with specified version 
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
 * selectivesearch 0.4
+* face-recognition 1.3.0
 * tqdm 4.62.3
 * pyyaml 5.4.1
 
