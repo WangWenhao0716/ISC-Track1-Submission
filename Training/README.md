@@ -4,7 +4,7 @@
 
 In the training parts, we use 11 datasets with different augmentations. The datasets are all selected from the provided training data. We choose 100,000 out of 1000,000 images to perform training. It should be noted that NO reference data is used.
 
-To be convenient, we supply the link to generated 11 datasets as follows.
+To be convenient, we supply the link to 11 generated datasets as follows.
 
 * [**isc_100k_256_big_bw**](https://drive.google.com/file/d/1-0bgvXogN133OJWb-V4PB9OJbk2Xrl_f/view?usp=sharing)
 * [**isc_100k_256_big**](https://drive.google.com/file/d/1-5vhQBvemdHQ3VGJCqG8oWKo2D02xBCU/view?usp=sharing) 
