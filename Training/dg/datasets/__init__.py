@@ -38,10 +38,6 @@ from .isc_100k_256_big_dark import ISC100K_256_big_dark
 
 
 __factory = {
-    'market1501': Market1501,
-    'dukemtmc': DukeMTMC,
-    'msmt17': MSMT17,
-    'randperson_subset': RandPerson,
     'isc_10k': ISC10K,
     'isc_100k': ISC100K,
     'isc_100k_256_big': ISC100K_256_big,
