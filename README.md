@@ -12,7 +12,7 @@ To begin with, you should install the following packages with the specified vers
 * sklearn 1.0
 * skimage 0.18.3
 * PIL 8.3.2
-* cv2 4.5.3
+* cv2 4.5.3.56
 * numpy 1.16.0
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
