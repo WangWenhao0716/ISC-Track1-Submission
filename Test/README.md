@@ -45,7 +45,7 @@ Center cropping: We use center cropping to generate 5 images, and the illustrati
 bash center.sh
 ```
 
-Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended. Assume that you have a server with more than 100 CPU cores.
+Selective search: We perform selective search and NMS to find the interested parts of an image. Note that selective search is very time-consuming, therefore using multi-cores CPUs manually is highly recommended. Assume that you have a server with more than 20 CPU cores.
 
 ```
 bash selective_search_nms.sh
