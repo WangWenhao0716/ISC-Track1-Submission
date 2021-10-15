@@ -2,12 +2,22 @@ from PIL import Image
 from PIL import ImageFilter
 import numpy as np
 import os
+import argparse
 
 names = sorted(os.listdir('/dev/shm/query_images/'))
 assert len(names)==50000
-#num = 9
-begin = 0 #num*5000
-end = 50000 #(num+1)*5000
+
+parser = argparse.ArgumentParser()
+def aa(*args, **kwargs):
+    group.add_argument(*args, **kwargs)
+group = parser.add_argument_group('The range of images')
+aa('--num', default=0, type=int, help="The begin number ")
+args = parser.parse_args()
+
+num = args.num
+begin = num * 500
+end = (num+1) * 500
+
 for n in range(begin,end):
     if(n%100==0):
         print(n)
