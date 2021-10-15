@@ -23,7 +23,7 @@ for i in range(len(names)):
                     new_h = int(enlarge*h)
                     old_img = old_img.resize((new_w,new_h))
                     new_img = old_img.crop(detect[j][:-2])
-                    num = 100 + j
+                    num = 1000 + j
                     dst = '/dev/shm/query_images_exp/' + names[i] + '_' + str(num) + '.jpg'
                     print(i)
                     al.append(i)
