@@ -19,6 +19,8 @@ To begin with, you should install the following packages with the specified vers
 * selectivesearch 0.4
 * face-recognition 1.3.0
 * tqdm 4.62.3
+* requests 2.26.0
+* seaborn 0.11.2
 
 Note: Some unimportant packages may be missing, please install them using pip directly when an error occurs.
 
