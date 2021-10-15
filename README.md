@@ -21,6 +21,7 @@ To begin with, you should install the following packages with the specified vers
 * tqdm 4.62.3
 * requests 2.26.0
 * seaborn 0.11.2
+* mkl 2.4.0
 
 Note: Some unimportant packages may be missing, please install them using pip directly when an error occurs.
 
