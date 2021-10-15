@@ -16,7 +16,7 @@ num = args.num
 begin = num * 2500
 end = (num+1) * 2500
 
-os.makedirs('/dev/shm/query_images_exp/', exist_ok = True)
+os.makedirs('/dev/shm/query_images_exp_VD/', exist_ok = True)
 for i in range(begin,end):
     if(i%100==0):
         print(i)
@@ -25,7 +25,7 @@ for i in range(begin,end):
     num = 1
     for angle in angles:
         rotated = img.transpose(angle)
-        name_new = '/dev/shm/query_images_exp/' + names[i][:-4] + '_' + str(num) + '.jpg'
+        name_new = '/dev/shm/query_images_exp_VD/' + names[i][:-4] + '_' + str(num) + '.jpg'
         rotated.save(name_new,quality=100)
         num = num + 1
 
