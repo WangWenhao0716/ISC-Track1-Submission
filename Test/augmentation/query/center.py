@@ -15,8 +15,8 @@ aa('--num', default=0, type=int, help="The begin number ")
 args = parser.parse_args()
 
 num = args.num
-begin = num * 500
-end = (num+1) * 500
+begin = num * 2500
+end = (num+1) * 2500
 
 for n in range(begin,end):
     if(n%100==0):
