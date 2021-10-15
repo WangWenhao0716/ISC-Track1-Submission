@@ -1,5 +1,5 @@
 import os
-names = sorted(os.listdir('/dev/shm/query_images_exp/'))
+names = sorted(os.listdir('/dev/shm/query_images_exp_VD/'))
 names = [i[:-4] for i in names]
 
 f = open('dev_queries_exp_VD','a')
