@@ -46,8 +46,8 @@ aa('--num', default=0, type=int, help="The begin number ")
 args = parser.parse_args()
 
 num = args.num
-begin = num * 500
-end = (num+1) * 500
+begin = num * 2500
+end = (num+1) * 2500
 for i in range(begin,end):
     print("processing ... %d"%i)
     test = Image.open(path + names[i])
