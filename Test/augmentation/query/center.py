@@ -26,28 +26,28 @@ for n in range(begin,end):
     size = im.size
     
     
-    im.save('/dev/shm/query_images_exp/' + name[:-4]+'_0' +'.jpg',quality=100)
+    im.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_0' +'.jpg',quality=100)
     
     #center
     num = 4
     img_c = im.crop(box=(int(size[0]*0.25),int(size[1]*0.25),int(size[0]*0.75),int(size[1]*0.75)))
-    img_c.save('/dev/shm/query_images_exp/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
+    img_c.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
     
     #center-4
     num = num + 1
     img_c = im.crop(box=(int(size[0]*1/6),int(size[1]*1/6),int(size[0]*3/6),int(size[1]*3/6)))
-    img_c.save('/dev/shm/query_images_exp/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
+    img_c.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
     
     num = num + 1
     img_c = im.crop(box=(int(size[0]*3/6),int(size[1]*1/6),int(size[0]*5/6),int(size[1]*3/6)))
-    img_c.save('/dev/shm/query_images_exp/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
+    img_c.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
 
     num = num + 1
     img_c = im.crop(box=(int(size[0]*1/6),int(size[1]*3/6),int(size[0]*3/6),int(size[1]*5/6)))
-    img_c.save('/dev/shm/query_images_exp/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
+    img_c.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
 
     num = num + 1
     img_c = im.crop(box=(int(size[0]*3/6),int(size[1]*3/6),int(size[0]*5/6),int(size[1]*5/6)))
-    img_c.save('/dev/shm/query_images_exp/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
+    img_c.save('/dev/shm/query_images_exp_VD/' + name[:-4]+'_' + str(num)+'.jpg',quality=100)
     
 # rotate aug: _4, _5, _6, _7, _8 (ori: _0)
