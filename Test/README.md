@@ -83,7 +83,7 @@ For reference, we only design one augmentation, i.e. dividing. The illustrations
 Note that, though we only have one augmentation, each image can generate 1 + (4 + 1) + (9 + 4) = 19 images, and total 19x1,000,000 = 19,000,000 images are generated . Therefore, please prepare enough storage to store the generated images and corresponding features. Please do NOT store low quality images, which may reduce the performance.
 
 ```
-python dividing.py
+bash dividing.sh
 ```
 
 Finally, after all the images are generated, you should generate file list ```dev_reference_exp``` by running 
