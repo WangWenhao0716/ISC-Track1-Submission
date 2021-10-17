@@ -4,6 +4,8 @@ from PIL import Image
 path = '/dev/shm/reference_images/'
 path_new = '/dev/shm/reference_images_exp_face/'
 
+os.makedirs(path_new, exist_ok=True)
+
 ls = sorted(os.listdir(path))
 assert len(ls) == 100_0000
 faces = []
