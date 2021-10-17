@@ -17,7 +17,7 @@ To begin with, you should install the following packages with the specified vers
 * torchvision 0.8.2 with cuda 10.1
 * augly 0.1.4
 * selectivesearch 0.4
-* face-recognition 1.3.0
+* face-recognition 1.3.0 (with dlib of gpu-version)
 * tqdm 4.62.3
 * requests 2.26.0
 * seaborn 0.11.2
