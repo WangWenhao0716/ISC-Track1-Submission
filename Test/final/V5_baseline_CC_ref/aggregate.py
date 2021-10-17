@@ -1,8 +1,19 @@
 import pandas as pd
 
 v_4 = pd.read_csv('50/predictions_dev_queries_50k_normalized_exp.csv')
+temp = list(v_4['query_id'])
+v_4['query_id'] = list(v_4['reference_id'])
+v_4['reference_id'] = temp
+
 v_5 = pd.read_csv('ibn/predictions_dev_queries_50k_normalized_exp.csv')
+temp = list(v_5['query_id'])
+v_5['query_id'] = list(v_5['reference_id'])
+v_5['reference_id'] = temp
+
 v_6 = pd.read_csv('152/predictions_dev_queries_50k_normalized_exp.csv')
+temp = list(v_6['query_id'])
+v_6['query_id'] = list(v_6['reference_id'])
+v_6['reference_id'] = temp
 
 v_4_query = list(v_4['query_id'])
 v_4_reference = list(v_4['reference_id'])
