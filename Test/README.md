@@ -224,7 +224,7 @@ Now, we have ```submit_50k.csv``` and ```V5-baseline-CC-234-50k-VD-pair.csv```. 
 ```
 python aggregate_choice2.py
 ```
-You can get the second file, ```submut_50k_choice2.csv```, to submit.
+You can get the second file, ```submit_50k_choice2.csv```, to submit.
 
 
 
