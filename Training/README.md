@@ -88,7 +88,7 @@ bash Train_baseline_CC_152_pair.sh
 bash Train_baseline_CC_50_pair.sh
 bash Train_baseline_CC_ibn_pair.sh
 ```
-Then using ```Tran.py```, you can get ```baseline_CC_152_pair.tar```, ```baseline_CC_50_pair.tar```, and ```baseline_CC_ibn_pair.tar```. Or you can directly download them from [**here**]().
+Then using ```Tran.py```, you can get ```baseline_CC_152_pair.pth.tar```, ```baseline_CC_50_pair.pth.tar```, and ```baseline_CC_ibn_pair.pth.tar```. Or you can directly download them from [**here**]().
 
 
 
