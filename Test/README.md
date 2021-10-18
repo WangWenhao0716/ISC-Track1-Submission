@@ -95,7 +95,7 @@ python generate_file_list_r.py
 Until now, we have 3x11 = 33 trained models, augmented query images, and augmented reference images. The test processing can be divided into two parts: Using augmented query images with original reference images (AQ+OR), and using original query images with augmented reference image (OQ+AR). For AQ+OR, we use all the 33 models, and for OQ+AR, we only use three models. All of the related files are stored in ```final``` folder.
 
 ### AQ + OR
-All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. baseline_cc_50.pth.tar, baseline_cc_152.pth.tar, baseline_cc_ibn.pth.tar. Other 10 folders follow the same pipelines.
+All the 33 trained models are used to test. We take V5_baseline_CC (isc_100k_256_big) for instance, the folder has three trained models, i.e. ```baseline_cc_50.pth.tar```, ```baseline_cc_152.pth.tar```, and ```baseline_cc_ibn.pth.tar```. Other 10 folders follow the same pipelines.
 
 We can enter into the folder by ```cd final/V5_baseline_CC```. You should move the generated ```dev_queries_exp_VD``` to ```final/V5_baseline_CC/list_files/```
 
@@ -213,6 +213,18 @@ Until now, we have ```final/step_11_50k.csv```, ```final_200/step_11_50k.csv```,
 By running ```bash submit.sh```, you can get the file, ```submit_50k.csv```, to submit.
 
 Congratulations!
+
+## Another choice
+Remember that we have got three trained models, i.e. ```baseline_cc_50_pair.pth.tar```, ```baseline_cc_152_pair.pth.tar```, and ```baseline_cc_ibn_pair.pth.tar```. You can just copy ```V5_baseline_CC``` folder by ```cp -r V5_baseline_CC V5_baseline_CC_pair```, and replace ```xxx.pth.tar``` with ```xxx_pair.pth.tar```.
+Then perform testing and ensembling same as in ```V5_baseline_CC```. You should only do this in ```final``` folder. 
+
+Finally, you can get ```V5_baseline_CC_pair/V5-baseline-CC-234-50k-VD-pair.csv```.
+
+Now, we have ```submit_50k.csv``` and ```V5-baseline-CC-234-50k-VD-pair.csv```. By running
+```
+python aggregate_choice2.py
+```
+You can get the second file, ```submut_50k_choice2.csv```, to submit.
 
 
 
