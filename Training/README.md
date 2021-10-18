@@ -76,7 +76,19 @@ I promise all the training experiments have been reproduced by ourselves and the
 Due to the large number of classes, we split the fully-connected layers into 4 GPUs, therefore, if the number of images cannot be divided by 4, an error will occur. This error may happen for ```isc_100k_256_big_ff_bw``` and ```isc_100k_256_big_ff``` datasets, and to eliminate the error, you can go to the folder by ``` cd /dev/shm/isc_100k_256_big_ff_bw/isc_100k_256_big_ff_bw``` and delete some images, such as ```rm -rf 0_*```. You should NOT delete more than 3 IDs.
 
 
+## Another choice
+According to the rules, we can also use the query and reference images without augmentation to train. The above method is for the first submission, and we train on the query-reference pair for the second submission. The images can be downloaded from [here](https://drive.google.com/file/d/14va5P7t1JgF_gxbODZeuO3i7ebndOGsS/view?usp=sharing), and they are just selected from the given query and reference images.
 
+You can train on these pairs by:
+```
+mv Train_baseline_CC_152_pair.sh ../
+mv Train_baseline_CC_50_pair.sh ../
+mv Train_baseline_CC_ibn_pair.sh ../
+bash Train_baseline_CC_152_pair.sh
+bash Train_baseline_CC_50_pair.sh
+bash Train_baseline_CC_ibn_pair.sh
+```
+Then using ```Tran.py```, you can get ```baseline_CC_152_pair.tar```, ```baseline_CC_50_pair.tar```, and ```baseline_CC_ibn_pair.tar```. Or you can directly download them from [**here**]().
 
 
 
