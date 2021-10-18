@@ -80,6 +80,6 @@ for i in range(begin,end):
     for num in range(len(candidates)):
         twt = test.crop(candidates[num])
         num_fix = 10 + num
-        twt.save("/dev/shm/query_images_exp/" + names[i][:-4] + '_' + str(num_fix) + ".jpg", quality=100)
+        twt.save("/dev/shm/query_images_exp_VD/" + names[i][:-4] + '_' + str(num_fix) + ".jpg", quality=100)
 
 #10~
