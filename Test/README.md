@@ -27,7 +27,7 @@ We augment query and reference datasets to match locally. The codes for augmenta
 ### Query
 For query, we design four augmentations, i.e. rotating, center cropping, selective search, and detection.
 
-Please Remember the original image!
+Please remember the original image!
 
 Rotating: We rotate an image 90, 180, and 270 degrees to generate three images.
 
