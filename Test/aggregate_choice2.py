@@ -15,3 +15,8 @@ df['reference_id'] = names
 df_clean =df.groupby(['query_id','reference_id']).max()
 
 df_clean.to_csv('submit_50k_choice2.csv',index=True)
+all_ = pd.read_csv('submit_50k_choice2.csv')
+all_ = all_.sort_values(by='score',ascending=False)
+
+all_ = all_.iloc[:50_0000]
+all_.to_csv('submit_50k_choice2.csv',index=False)
