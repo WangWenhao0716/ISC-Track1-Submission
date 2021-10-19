@@ -28,7 +28,7 @@ Please enter the folder by ```cd momentum2-teacher-resnet152```, and running:
 ```
 python train.py -b 512 -d 0-7 \
 --experiment-name imagenet_baseline_resnet152 \
--f momentum_teacher/exps/arxiv/exp_8_v100/momentum2_teacher_300e_exp.py \
+-f momentum_teacher/exps/arxiv/exp_8_v100/momentum2_teacher_300e_exp.py 
 ```
 on a standard 8 V100 GPUs machine.
 You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet152```.
@@ -45,7 +45,7 @@ Please enter the folder by ```cd momentum2-teacher-resnetIBN```, and running:
 ```
 python train.py -b 1024 -d 0-7 \
 --experiment-name imagenet_baseline_resnet50ibn \
--f momentum_teacher/exps/arxiv/exp_8_v100/momentum2_teacher_300e_exp.py \
+-f momentum_teacher/exps/arxiv/exp_8_v100/momentum2_teacher_300e_exp.py 
 ```
 on a standard 8 V100 GPUs machine.
 You will get the ```last_epoch_ckpt.pth.tar``` after 300 epochs in the path ```./outputs/imagenet_baseline_resnet50ibn```.
