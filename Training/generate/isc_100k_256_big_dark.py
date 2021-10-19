@@ -241,11 +241,11 @@ for i in range(begin,end):
         print('processing...',i)
         image = Image.open('/dev/shm/training_images/'+names[i])
         name = str(i//10)+'_0.jpg'
-        image.resize((256,256)).save(path+name, quality=1000)
+        image.resize((256,256)).save(path+name, quality=100)
         for j in range(1,20):
             image_q = transform_q(image)
             name = str(i//10)+'_'+ str(j) +'.jpg'
-            image_q.save(path+name, quality=1000)
+            image_q.save(path+name, quality=100)
 
 
 
