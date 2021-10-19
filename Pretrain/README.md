@@ -59,6 +59,8 @@ to transfer the unsupervised pretrained model to the one we can use. It is saved
 
 Note: If an NCCL error occurs, please delete ```configure_nccl()``` in Line 75 of ```train.py```.
 
+Note: If a FileNotFind erro occurs, please re-run the given codes.
+
 Note: The above pre-training codes support training from a checkpoint.
 
 
