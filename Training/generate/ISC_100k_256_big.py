@@ -232,8 +232,8 @@ transform_q = transforms.Compose(
 names = sorted(os.listdir('/dev/shm/training_images/'))
 os.makedirs('/dev/shm/isc_100k_256_big/isc_100k_256_big',exist_ok=True)
 #num = 19
-begin = 0 #int(num*51000)
-end = 1000000 #int((num+1)*51000)
+begin = 0 #int(num*50000)
+end = 1000000 #int((num+1)*50000)
 for i in range(begin,end):
     if(i%10==0):
         print('processing...',i)
