@@ -83,6 +83,7 @@ step_11 = pd.concat((V5_baseline_CC_234,R_baseline_CC_234,V5_blur_CC_234,V5_face
 
 
 q = ['Q%05d_0'%i for i in range(50000, 100000)] + ['Q%05d_100'%i for i in range(50000, 100000)] + ['Q%05d_101'%i for i in range(50000, 100000)] 
+print("This is designed for Phase 2: the numbers of querys are from 50000 to 99999!!!")
 not_in = step_11[~step_11.query_id.isin(q)]
 score_new = np.array(list(not_in['score']))
 score_new = score_new-0.05
