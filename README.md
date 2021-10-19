@@ -31,7 +31,7 @@ We use three pre-trained models. They are all pre-trained on ImageNet unsupervis
 
 The first backbone: [**ResNet-50**](https://drive.google.com/file/d/14M57frgk3TX-yLF8diwALLHtPdCZ53mS/view?usp=sharing); The second backbone: [**ResNet-152**](https://drive.google.com/file/d/1-1QkeKCo9PrgDdUF3fe561JtEntd32hv/view?usp=sharing); The third backbone: [**ResNet-50-IBN**](https://drive.google.com/file/d/1-5B2B5VherIRHN9ahE-5L6w1VoWxBD_c/view?usp=sharing).
 
-For ResNet-50, we do not pre-train it by ourselves. It is directly downloaded from [**here**](https://dl.fbaipublicfiles.com/barlowtwins/ep1000_bs2048_lrw0.2_lrb0.0048_lambd0.0051/resnet50.pth). It is supplied by Facebook Research, and the project is [**Barlow Twins**](https://github.com/facebookresearch/barlowtwins).
+For ResNet-50, we do not pre-train it by ourselves. It is directly downloaded from [**here**](https://dl.fbaipublicfiles.com/barlowtwins/ep1000_bs2048_lrw0.2_lrb0.0048_lambd0.0051/resnet50.pth). It is supplied by Facebook Research, and the project is [**Barlow Twins**](https://github.com/facebookresearch/barlowtwins). You should rename it to ```resnet50_bar.pth```.
 
 For ResNet-152 and ResNet-50-IBN, we use the official codes of [**Momentum2-teacher**](https://github.com/zengarden/momentum2-teacher). We only change the backbone to ResNet-152 and ResNet-50-IBN. It takes about 2 weeks to pre-train the ResNet-152, and 1 week to pre-train the ResNet-50-IBN on 8 V100 GPUs. To be convenient, we supply the whole pre-training codes in the ```Pretrain``` folder. The related readme file is also given in that folder. 
 
