@@ -22,6 +22,7 @@ To begin with, you should install the following packages with the specified vers
 * requests 2.26.0
 * seaborn 0.11.2
 * mkl 2.4.0
+* loguru 0.5.3
 
 Note: Some unimportant packages may be missing, please install them using pip directly when an error occurs.
 
