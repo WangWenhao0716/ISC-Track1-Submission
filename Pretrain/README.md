@@ -57,6 +57,8 @@ python tran.py
 to transfer the unsupervised pretrained model to the one we can use. It is saved in ```/dev/shm``` by default.
 
 
+Note: If an NCCL error occurs, please delete ```configure_nccl()``` in Line 75 of ```train.py```.
+
 Note: The above pre-training codes support training from a checkpoint.
 
 
