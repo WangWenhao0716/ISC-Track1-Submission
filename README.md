@@ -5,7 +5,7 @@ The codes and related files to reproduce the results for Image Similarity Challe
 2021.11.24 Updates: Fix some bugs without changing performance.
 
 ## Required dependencies
-To begin with, you should install the following packages with the specified versions in Python, Anaconda. Other versions may work but please do NOT try. For instance, cuda 11.0 has some bugs which bring very bad results. The hardware chosen is Nvidia Tesla V100 and Intel CPU. We also repeat the experiments using DGX A100 with AMD CPU, with pytorch 1.9.1 with cuda 11.1.
+To begin with, you should install the following packages with the specified versions in Python, Anaconda. Please do not use cuda 11.0, which has some bugs. The hardware chosen is Nvidia Tesla V100 and Intel CPU. We also repeat the experiments using DGX A100 with AMD CPU, with pytorch 1.9.1 and cuda 11.1.
 
 * python 3.7.10
 * pytorch 1.7.1 with cuda 10.1
