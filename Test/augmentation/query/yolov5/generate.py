@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import numpy as np
 
-names = ['Q%05d'%i for i in range(50000)]
+names = ['Q%05d'%i for i in range(50000,10_0000)]
 path = '/dev/shm/query_images/'
 
 
