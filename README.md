@@ -53,9 +53,11 @@ For training, we generate 11 datasets. For each dataset, 3 models with different
 To test the performance of the trained model, we perform multi-scale, multi-model, and multi-part testing and ensemble all the scores to get the final score. To be efficient, 33 V100 GPUs are suggested to use. The time for extracting all query images' features using 33 V100 GPUs is about 3 hours. Also extracting and storing training and reference images' features take a lot of time. Please be patient and prepare enough storage to reproduce the testing process. We give all the information to generate our final results in the ```Test``` folder. Please reproduce the results according to the readme file in that folder.
 
 ## Citation
+```
 @article{wang2021d,
   title={D\^{} 2LV: A Data-Driven and Local-Verification Approach for Image Copy Detection},
   author={Wang, Wenhao and Sun, Yifan and Zhang, Weipu and Yang, Yi},
   journal={arXiv preprint arXiv:2111.07090},
   year={2021}
 }
+```
