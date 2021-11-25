@@ -4,6 +4,8 @@ The codes and related files to reproduce the results for Image Similarity Challe
 
 # News
 2021.11.25 Updates: This solution is verified! If you find this code useful for your research, please cite our paper.
+
+
 2021.11.24 Updates: Fix some bugs without changing performance.
 
 ## Required dependencies
