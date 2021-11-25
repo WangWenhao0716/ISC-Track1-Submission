@@ -1,5 +1,5 @@
 
-# ISC-Track1-Submission 
+# ISC-Track1-Submission (Rank 1)
 The codes and related files to reproduce the results for Image Similarity Challenge Track 1.
 
 # News
