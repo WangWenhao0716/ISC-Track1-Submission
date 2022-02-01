@@ -4,4 +4,4 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train_single_source_gem_coslr_wb_high_balanc
 --lr 0.00035 --iters 8000 --epochs 25 \
 --data-dir /dev/shm/ \
 --logs-dir logs/u_CC/152 \
---height 256 --width 256 --auto_resume
+--height 256 --width 256
