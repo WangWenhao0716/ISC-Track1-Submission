@@ -3,7 +3,6 @@
 The codes and related files to reproduce the results for Image Similarity Challenge Track 1.
 
 # News
-2022.4.14 Updates: The license is changed to CC BY-NC 4.0. No one is permitted to use the current version code for commercial without permission from Wenhao Wang. Thanks for understanding!
 
 2021.11.25 Updates: This solution is verified! If you find this code useful for your research, please cite our paper.
 
