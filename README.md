@@ -3,6 +3,7 @@
 The codes and related files to reproduce the results for Image Similarity Challenge Track 1.
 
 # News
+2022.6.13 Updates: For training code, please write a request email (with your purpose and your personal information) to wangwenhao0716@gmail.com.
 
 2021.11.25 Updates: This solution is verified! If you find this code useful for your research, please cite our paper.
 
